@@ -28,7 +28,7 @@ const Home = () => {
 
             setCandidatureList(data.reverse())
             console.log('data', data)
-           
+
         });
 
     }, []);
@@ -52,7 +52,7 @@ const Home = () => {
     }
     const handleConfirm = () => {
         if (captcha) {
-            axios.patch(`${process.env.REACT_APP_ENDPPOINT}/vote/${userVotedId}`, { cinId: JSON.parse(localStorage.getItem('token')).cinId }).then(res => {
+            axios.post(`${process.env.REACT_APP_ENDPPOINT}/vote/${userVotedId}`, { cinId: JSON.parse(localStorage.getItem('token')).cinId }).then(res => {
                 const user = JSON.parse(localStorage.getItem('token'))
                 user.isVoted = true
                 localStorage.setItem('token', JSON.stringify(user))
