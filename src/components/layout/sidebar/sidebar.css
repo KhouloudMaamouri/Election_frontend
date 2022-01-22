@@ -1,0 +1,85 @@
+.sidebar {
+    min-width: 260px;
+    max-width: 260px;
+    background-color: #2B3A4A;
+    height: calc(100vh - 65px);
+    position: fixed;
+    margin-top: 65px;
+  
+  
+}
+.layout .hero{
+    display: flex;
+}
+.layout .content{
+    width: calc(100% - 260px);
+  word-break: break-all;
+    margin-left: 260px;
+    padding: 0px 20px 30px 20px;
+    margin-top: 65px;
+    background-color: #F5F5F5;
+    height: calc(100vh - 65px);
+}
+.sidebar .ant-menu{
+    background: none;
+    color: #8699ad;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{
+    background-color: #25313d !important;
+    color: white;
+}
+.sidebar .menuSidebar{
+    margin-top: 20px;
+}
+.sidebar .ant-menu-submenu > .ant-menu{
+    background: none;
+}
+.sidebar .ant-menu-submenu-selected{
+    color: white;
+}
+ .ant-menu-inline .ant-menu-item::after{
+    border-right: 4px solid pink !important;
+}
+ .ant-menu-submenu-arrow, .sidebar .ant-menu-submenu-arrow:hover, .sidebar .ant-menu-submenu:hover > .ant-menu-submenu-title > .ant-menu-submenu-arrow{
+    color: white !important;
+}
+
+/* drawer  */
+
+.navbarDrawer .ant-drawer-body{
+    padding: 0 !important;
+    background: #263442 ;
+}
+.menuSidebarDrawer{
+    margin-top: 65px !important;
+    overflow: hidden;
+}
+.navbarDrawer .ant-menu{
+    background: none ;
+    color: #8699ad;
+}
+.navbarDrawer .ant-menu-inline{
+    border: none;
+}
+
+.navbarDrawer .ant-menu-sub.ant-menu-inline {
+    background: #263442 ;
+}
+
+@media(max-width: 1000px){
+   .layout .sidebar {
+        display: none;
+    }
+    .layout .content{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .layout .logoSidebar{
+        display: none;
+    }
+    .navbar .logoMobile{
+        display: flex;
+    }
+    
+}

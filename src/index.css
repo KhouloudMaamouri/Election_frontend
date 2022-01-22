@@ -1,0 +1,73 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.loginContainerForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loginContainer {
+  width: 60%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  background: #f0f0f0;
+  padding: 80px 60px 60px 60px !important;
+  text-align: center;
+  border-radius: 30px;
+}
+.recharts-text {
+  font-size: 11px;
+}
+.createEmlpoyeContainer {
+  width: 70%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 50px !important;
+  text-align: center;
+}
+.ant-menu-item a {
+  color: white !important;
+}
+.ant-picker {
+  width: 100%;
+}
+button {
+  margin-bottom: 30px !important;
+}
+.ant-btn {
+  margin-left: auto !important;
+}
+
+.chartEm .recharts-responsive-container {
+  margin: auto;
+}
+.selectChartEm {
+  width: 200px;
+}
+.linkAuth{
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+.percentCard{
+  color: rgb(19, 180, 86);
+  margin-top: 20px;
+}
+.totalCard{
+  margin-bottom: 20px;
+}
+.cardHome{
+  margin-top: 30px !important;
+  
+}
+
+.g-recaptcha div{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
