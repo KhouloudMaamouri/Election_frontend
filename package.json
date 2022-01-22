@@ -10,7 +10,6 @@
     "antd": "^4.16.13",
     "axios": "^0.24.0",
     "dayjs": "^1.10.7",
-    "express": "^4.17.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-google-recaptcha": "^2.1.0",
@@ -19,12 +18,13 @@
     "react-to-print": "^2.14.3",
     "reaptcha": "^1.7.3",
     "recharts": "^2.1.8",
+    "socket.io-client": "^4.4.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
