@@ -47,7 +47,7 @@ const Users = () => {
         /*   axios.post('http://127.0.0.1:8000/timeSheet/update', data).then(res => {
               window.location.reload()
           }).catch(err => console.log(err)) */
-          axios.patch(`${process.env.REACT_APP_ENDPPOINT}/users/${userId}`, values).then(res => {
+          axios.post(`${process.env.REACT_APP_ENDPPOINT}/users/${userId}`, values).then(res => {
             window.location.reload()
         }).catch(err => setErr('Cin exist déja'))
 
