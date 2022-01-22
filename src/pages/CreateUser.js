@@ -3,7 +3,7 @@ import { Button, Form, Input, Select } from "antd";
 import axios from 'axios'
 import { useNavigate } from "react-router-dom";
 import { Navigate } from "react-router-dom";
-import { useState } from "react/cjs/react.development";
+import {useState} from 'react'
 const { Option } = Select;
 const CreateUser = () => {
     const navigate = useNavigate()
@@ -77,7 +77,7 @@ const CreateUser = () => {
                     <Select style={{ width: '100%' }} >
                         <Option value="Candidature">Candidature</Option>
                         <Option value="Electeur">Electeur</Option>
-                    
+
                     </Select>
                 </Form.Item>
 
@@ -96,7 +96,7 @@ const CreateUser = () => {
                     <Input.Password />
                 </Form.Item>
 
-        
+
                     <Form.Item
 
                     >
